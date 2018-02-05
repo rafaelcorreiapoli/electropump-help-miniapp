@@ -1229,6 +1229,12 @@ ee-first@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ee-first/-/ee-first-1.1.1.tgz#590c61156b0ae2f4f0255732a158b266bc56b21d"
 
+electropump-http-client-api@1.4.0:
+  version "1.4.0"
+  resolved "https://registry.yarnpkg.com/electropump-http-client-api/-/electropump-http-client-api-1.4.0.tgz#a3838cb39623049a9a65c2854eea4954a64452ec"
+  dependencies:
+    react-native-electrode-bridge "1.5.x"
+
 encodeurl@~1.0.1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/encodeurl/-/encodeurl-1.0.2.tgz#ad3ff4c86ec2d029322f5a02c3a9a606c95b3f59"
@@ -1289,6 +1295,10 @@ event-target-shim@^1.0.5:
 eventemitter3@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/eventemitter3/-/eventemitter3-3.0.0.tgz#fc29ecf233bd19fbd527bb4089bbf665dc90c1e3"
+
+events@^1.1.1:
+  version "1.1.1"
+  resolved "https://registry.yarnpkg.com/events/-/events-1.1.1.tgz#9ebdb7635ad099c70dcc4c2a1f5004288e8bd924"
 
 exec-sh@^0.2.0:
   version "0.2.1"
@@ -2787,6 +2797,26 @@ react-devtools-core@3.0.0:
   dependencies:
     shell-quote "^1.6.1"
     ws "^2.0.3"
+
+react-native-electrode-bridge@1.5.9, react-native-electrode-bridge@1.5.x:
+  version "1.5.9"
+  resolved "https://registry.yarnpkg.com/react-native-electrode-bridge/-/react-native-electrode-bridge-1.5.9.tgz#0510c2050e23267524d8dfb52ed7a8e441ae37e0"
+  dependencies:
+    events "^1.1.1"
+    uuid "^3.0.0"
+
+react-native-electropump-http-client-api-impl@1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-native-electropump-http-client-api-impl/-/react-native-electropump-http-client-api-impl-1.1.0.tgz#f90a1500e1e6a6162ac70787f03f3a8f5354a84e"
+  dependencies:
+    electropump-http-client-api "1.4.0"
+    react-native-electrode-bridge "1.5.9"
+
+react-native-ernmovie-api@0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api/-/react-native-ernmovie-api-0.0.10.tgz#afee4c904230850022da09b241d23b2bc84cf469"
+  dependencies:
+    react-native-electrode-bridge "1.5.x"
 
 react-native@0.52.2:
   version "0.52.2"
