@@ -1,6 +1,6 @@
 {
   "name": "electropump-help-miniapp",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": false,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start"
@@ -10,8 +10,7 @@
     "react": "16.2.0",
     "react-native": "0.52.2",
     "react-native-electrode-bridge": "1.5.9",
-    "react-native-electropump-http-client-api-impl": "1.1.0",
-    "react-native-ernmovie-api": "0.0.10"
+    "react-native-electropump-http-client-api-impl": "1.1.0"
   },
   "ern": {
     "version": "0.12.0",

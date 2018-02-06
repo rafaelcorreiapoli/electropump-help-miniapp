@@ -2812,12 +2812,6 @@ react-native-electropump-http-client-api-impl@1.1.0:
     electropump-http-client-api "1.4.0"
     react-native-electrode-bridge "1.5.9"
 
-react-native-ernmovie-api@0.0.10:
-  version "0.0.10"
-  resolved "https://registry.yarnpkg.com/react-native-ernmovie-api/-/react-native-ernmovie-api-0.0.10.tgz#afee4c904230850022da09b241d23b2bc84cf469"
-  dependencies:
-    react-native-electrode-bridge "1.5.x"
-
 react-native@0.52.2:
   version "0.52.2"
   resolved "https://registry.yarnpkg.com/react-native/-/react-native-0.52.2.tgz#1ae9a4c4441bd6e54a8ffc8aae4ac2b5c7cccd68"

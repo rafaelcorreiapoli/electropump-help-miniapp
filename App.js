@@ -9,53 +9,42 @@ import {
   View,
   FlatList,
   Image,
-  TouchableHighlight
+  TouchableHighlight,
+  Button
 } from 'react-native'
+import { HttpClientApi} from 'electropump-http-client-api'
+
+const fetchGoogle = () => HttpClientApi.requests().fetch('https://www.google.com', 'get')
 
 export default class MovieListMiniApp extends Component {
-
-  _keyExtractor = (item, index) => item.title;
-
-  constructor () {
-    super()
+  constructor (props) {
+    super(props)
     this.state = {
-      movies: [{
-        title: 'The Fast and Furious',
-        releaseYear: 2010,
-        ratings: '4.5',
-        imageUrl: 'http://bit.ly/2jRUZwE',
-        description: 'The Fast and the Furious'
-      }, {
-        title: '2 Fast 2 Furious',
-        releaseYear: 2011,
-        ratings: '4.0',
-        imageUrl: 'http://bit.ly/2jTfYPF',
-        description: 'How fast do you like it ?'
-      }]
+      body: ''
     }
   }
 
+  handlePress = async () => {
+    const data = await fetchGoogle()
+    const body = data.body
+    this.setState({
+      body
+    })
+  }
   render () {
     return (
-      <FlatList
-        style={styles.container}
-        data={this.state.movies}
-        keyExtractor={this._keyExtractor}
-        renderItem={({item}) =>
-          <View style={styles.row}>
-            <Image
-              style={styles.icon}
-              source={{
-                uri: item.imageUrl ? item.imageUrl : 'http://bit.ly/2yz3AYe'
-              }}
-            />
-            <View style={styles.row2}>
-              <Text style={styles.title}>{item.title}</Text>
-              <Text style={styles.subtitle}>{item.releaseYear}</Text>
-            </View>
-          </View>
-        }
-      />
+      <View style={{flex: 1, backgroundColor: 'tomato'}}>
+        <Text>
+          HelpMiniApp
+        </Text>
+        <Text style={{flex: 1}}>
+          {this.state.body ? this.state.body : 'Waiting...'}
+        </Text>
+        <Button
+         onPress={this.handlePress}
+         title="FETCH"
+        />
+      </View>
     )
   }
 
