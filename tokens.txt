@@ -1,0 +1,7 @@
+iOS
+  prod z8J159sSAIpMwR7rK3yKUPcA4ITT1e0b1580-1e9f-4dc6-a7c9-4c6f6ac0bec5
+  staging VCEGE7qHGIDwVBKmU6lRCnSBjOaJ1e0b1580-1e9f-4dc6-a7c9-4c6f6ac0bec5
+
+Android
+  prod Ihnqwl-q2GeVHXXowPkZN4uMlUvU1e0b1580-1e9f-4dc6-a7c9-4c6f6ac0bec5
+  staging UjyXHsKyM0kJq7CBRhqk0wZUgEr01e0b1580-1e9f-4dc6-a7c9-4c6f6ac0bec5
